@@ -1,0 +1,144 @@
+libc/misc/elf/dl-core.os libc/misc/elf/dl-core.os:  \
+ libc/misc/elf/dl-core.c include/libc-symbols.h \
+  include/bits/uClibc_arch_features.h \
+  libc/misc/elf/../../../ldso/ldso/dl-symbols.c ldso/include/ldso.h \
+  include/features.h include/bits/uClibc_config.h include/sys/cdefs.h \
+  include/libc-internal.h \
+  /home/stefan/cloud9/llvm-gcc/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.2.1/include/stddef.h \
+  include/bits/stackinfo.h include/stdlib.h include/bits/waitflags.h \
+  include/bits/waitstatus.h include/endian.h include/bits/endian.h \
+  include/xlocale.h include/bits/uClibc_locale.h include/stdint.h \
+  include/bits/wchar.h include/bits/wordsize.h \
+  include/bits/uClibc_touplow.h include/bits/types.h \
+  include/bits/kernel_types.h include/bits/typesizes.h \
+  include/bits/uClibc_locale_data.h include/sys/types.h include/time.h \
+  include/sys/select.h include/bits/select.h include/bits/sigset.h \
+  include/bits/time.h include/sys/sysmacros.h include/alloca.h \
+  /home/stefan/cloud9/llvm-gcc/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.2.1/include/stdarg.h \
+  include/bits/uClibc_page.h ldso/include/dl-syscall.h \
+  ldso/ldso/x86_64/dl-syscalls.h include/sys/syscall.h \
+  include/bits/sysnum.h include/bits/syscalls.h include/errno.h \
+  include/bits/errno.h /usr/include/linux/errno.h \
+  /usr/include/asm/errno.h /usr/include/asm-generic/errno.h \
+  /usr/include/asm-generic/errno-base.h include/bits/uClibc_errno.h \
+  include/bits/mman.h include/bits/kernel_stat.h ldso/include/dl-string.h \
+  ldso/ldso/x86_64/dl-sysdep.h include/elf.h include/link.h \
+  include/bits/elfclass.h ldso/include/dl-elf.h ldso/include/dl-defs.h \
+  ldso/include/dl-hash.h include/assert.h
+
+include/libc-symbols.h:
+
+include/bits/uClibc_arch_features.h:
+
+libc/misc/elf/../../../ldso/ldso/dl-symbols.c:
+
+ldso/include/ldso.h:
+
+include/features.h:
+
+include/bits/uClibc_config.h:
+
+include/sys/cdefs.h:
+
+include/libc-internal.h:
+
+/home/stefan/cloud9/llvm-gcc/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.2.1/include/stddef.h:
+
+include/bits/stackinfo.h:
+
+include/stdlib.h:
+
+include/bits/waitflags.h:
+
+include/bits/waitstatus.h:
+
+include/endian.h:
+
+include/bits/endian.h:
+
+include/xlocale.h:
+
+include/bits/uClibc_locale.h:
+
+include/stdint.h:
+
+include/bits/wchar.h:
+
+include/bits/wordsize.h:
+
+include/bits/uClibc_touplow.h:
+
+include/bits/types.h:
+
+include/bits/kernel_types.h:
+
+include/bits/typesizes.h:
+
+include/bits/uClibc_locale_data.h:
+
+include/sys/types.h:
+
+include/time.h:
+
+include/sys/select.h:
+
+include/bits/select.h:
+
+include/bits/sigset.h:
+
+include/bits/time.h:
+
+include/sys/sysmacros.h:
+
+include/alloca.h:
+
+/home/stefan/cloud9/llvm-gcc/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.2.1/include/stdarg.h:
+
+include/bits/uClibc_page.h:
+
+ldso/include/dl-syscall.h:
+
+ldso/ldso/x86_64/dl-syscalls.h:
+
+include/sys/syscall.h:
+
+include/bits/sysnum.h:
+
+include/bits/syscalls.h:
+
+include/errno.h:
+
+include/bits/errno.h:
+
+/usr/include/linux/errno.h:
+
+/usr/include/asm/errno.h:
+
+/usr/include/asm-generic/errno.h:
+
+/usr/include/asm-generic/errno-base.h:
+
+include/bits/uClibc_errno.h:
+
+include/bits/mman.h:
+
+include/bits/kernel_stat.h:
+
+ldso/include/dl-string.h:
+
+ldso/ldso/x86_64/dl-sysdep.h:
+
+include/elf.h:
+
+include/link.h:
+
+include/bits/elfclass.h:
+
+ldso/include/dl-elf.h:
+
+ldso/include/dl-defs.h:
+
+ldso/include/dl-hash.h:
+
+include/assert.h:
+cmd_libc_misc_elf_dl-core.os := llvm-gcc --emit-llvm -c libc/misc/elf/dl-core.c -o libc/misc/elf/dl-core.os -include include/libc-symbols.h -Wall -Wstrict-prototypes -fno-strict-aliasing -fno-stack-protector -fno-builtin -nostdinc -Iinclude -I. -Ilibc/sysdeps/linux/x86_64 -fno-asm -DUCLIBC_INTERNAL -DSTATIC -std=gnu99 -Os -funit-at-a-time -fno-tree-loop-optimize -fno-tree-dominator-opts -fno-strength-reduce -I/usr/include/ -I/home/stefan/cloud9/llvm-gcc/bin/.lib/gcc/x86_64-unknown-linux-gnu/4.2.1//include-fixed -I/home/stefan/cloud9/llvm-gcc/bin/.lib/gcc/x86_64-unknown-linux-gnu/4.2.1/include -DNDEBUG -fPIC -Ildso/ldso/x86_64 -Ildso/include -MT libc/misc/elf/dl-core.os -MD -MP -MF libc/misc/elf/.dl-core.os.dep
